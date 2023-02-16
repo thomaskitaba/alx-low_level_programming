@@ -1,2 +1,3 @@
 #!/bin/bash
+gcc -s $CFILE -o $(basename "$CFILE".c).s
 
