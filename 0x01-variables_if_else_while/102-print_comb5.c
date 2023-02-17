@@ -25,14 +25,7 @@ int main(void)
 					putchar('0' + j);
 					putchar(32);
 					putchar('0' + k);
-					if ( l == 10 )
-					{
-						putchar('0');
-					}
-					else
-					{
-						putchar('0' + 1);
-					}
+					putchar('0' + l);
 					if (j != 8)
 					{
 						putchar(44);
