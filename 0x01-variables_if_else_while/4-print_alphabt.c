@@ -14,7 +14,7 @@ int main(void)
 	{
 		char small_char = (char) small;
 
-		if (small != 101 || small != 113)
+		if (small != 101 && small != 113)
 		{
 			putchar (small_char);
 		}
