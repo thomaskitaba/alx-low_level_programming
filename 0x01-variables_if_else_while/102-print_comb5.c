@@ -20,16 +20,18 @@ int main(void)
 			{
 				for (l = j + 1; l <= 10; l++)
 				{
-					
-					putchar('0' + i);
-					putchar('0' + j);
-					putchar(32);
-					putchar('0' + k);
-					putchar('0' + l);
-					if (j != 8)
+					if (j < l)
 					{
-						putchar(44);
+						putchar('0' + i);
+						putchar('0' + j);
 						putchar(32);
+						putchar('0' + k);
+						putchar('0' + l);
+						if (j != 8)
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 				}
 			}
