@@ -24,6 +24,7 @@ int main(void)
 					putchar('0' + j);
 					putchar(44);
 					putchar('0' + k);
+					putchar('0' + l);
 					if (j != 8)
 					{
 						putchar(44);
