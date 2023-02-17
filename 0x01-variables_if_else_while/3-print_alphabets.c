@@ -10,22 +10,19 @@ int main(void)
 {
 	int small;
 	int cap;
-	
-	for(small = 97; small < 123; small++)
+
+	for (small = 97; small < 123; small++)
 	{
-		char small_char = (char)small;
-		putchar(small_char);
+		char small_char = (char) small;
+
+		putchar (small_char);
 	}
 	for (cap = 65; cap < 91; cap++)
 	{
-		char big_char = (char)cap;
-		putchar(big_char);
+		char big_char = (char) cap;
+
+		putchar (big_char);
 	}
-	
 	putchar('\n');
-        return (0);
+	return (0);
 }
-~                                                                                                
-~                                                                                                
-~                                                                                                
-~                    
