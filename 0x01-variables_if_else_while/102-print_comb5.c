@@ -25,7 +25,7 @@ int main(void)
 					putchar('0' + j);
 					putchar(32);
 					putchar('0' + k);
-					if ( l == )
+					if ( l == 10 )
 					{
 						putchar('0');
 					}
