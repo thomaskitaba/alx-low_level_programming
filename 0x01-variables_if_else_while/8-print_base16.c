@@ -12,8 +12,12 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		printf("%d", i);
+		putchar('0' + i);
 
+	}
+	for (j = 0; j < 5; j++)
+	{
+		putchar('97' + j);
 	}
 	putchar('\n');
 	return (0);
