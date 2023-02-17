@@ -16,7 +16,7 @@ int main(void)
 		putchar('0' + i);
 
 	}
-	for (j = 0; j < 5; j++)
+	for (j = 0; j < 6; j++)
 	{
 		putchar(97 + j);
 	}
