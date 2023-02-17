@@ -9,7 +9,6 @@
 int main(void)
 {
 	int small;
-	int cap;
 
 	for (small = 97; small < 123; small++)
 	{
