@@ -23,6 +23,7 @@ int main(void)
 					putchar('0' + i);
 					putchar('0' + j);
 					putchar(32);
+					putchar('0' + k);
 					putchar('0' + l);
 					if (j != 8)
 					{
