@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 /**
  * main - Entry point for the program
  *
@@ -10,12 +11,8 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 10; i++)
-	{	
-		putchar('0' + i);
-		if (i != 9)
-		{
-			putchar(44);
-		}
+	{
+		printf("%d", i);
 
 	}
 	putchar('\n');
