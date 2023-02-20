@@ -27,7 +27,6 @@ int main(void)
 						putchar(32);
 						putchar('0' + i);
 						putchar('0' + j);
-
 						if (m != 8 || i != 9 || j != 9)
 						{
 							putchar(44);
