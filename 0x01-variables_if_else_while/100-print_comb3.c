@@ -19,7 +19,7 @@ int main(void)
 			putchar('0' + j);
 			if (i != 8)
 			{
-				putchar(43 + 1);
+				putchar(44);
 				putchar(32);
 			}
 		}

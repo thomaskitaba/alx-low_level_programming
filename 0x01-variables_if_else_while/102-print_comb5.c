@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - Entry point for the program
@@ -7,33 +6,30 @@
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int num1;
+	int num2;
 
-	for (i = 0; i < 10; i++)
+	for (num1 = 0; num1 <= 99; num1++)
 	{
-		for (j = i; j < 10; j++)
+		for (num2 = num1; num2 <= 99; num2++)
 		{
-			for (k = j; k < 10; k++)
+			int tens1 = num1 / 10;
+			int ones1 = num1 % 10;
+			int tens2 = num2 / 10;
+			int ones2 = num2 % 10;
+
+			putchar(tens1 + '0');
+			putchar(ones1 + '0');
+			putchar(' ');
+			putchar(tens2 + '0');
+			putchar(ones2 + '0');
+
+			if (num1 < 99 || num2 < 99)
 			{
-				for (l = k; l < 10; l++)
-				{
-					putchar('0' + i);
-					putchar('0' + j);
-					putchar(32);
-					putchar('0' + k);
-					putchar('0' + l);
-					if (j != 8)
-					{
-						putchar(44);
-						putchar(32);
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
