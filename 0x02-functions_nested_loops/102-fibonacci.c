@@ -16,9 +16,8 @@ int main(void)
 	{
 		if (count == 0)
 			printf("%d", temp);
-
 		else if (count == 1)
-			pdrintf("%d", num2);
+			printf("%d", num2);
 		else
 		{
 			fib = temp + num2;
