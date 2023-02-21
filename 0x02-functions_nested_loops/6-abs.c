@@ -8,6 +8,5 @@
 int _abs(int n)
 {
 
-	_putchar((char)abs(n));
-	return (0);
+	return (abs(n));
 }
