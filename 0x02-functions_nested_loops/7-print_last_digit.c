@@ -10,11 +10,14 @@
 int print_last_digit(int n)
 {
 	int last_digit;
+	char a;
 
 	last_digit = n % 10;
 	if (n < 0)
 		last_digit = -(last_digit);
-	return (last_digit);
+	a = (char)last_digit + (char)last_digit;
+
+	return ((int)a);
 }
 
 
