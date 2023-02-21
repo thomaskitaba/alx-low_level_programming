@@ -39,8 +39,6 @@ void times_table(void)
 					_putchar(32);
 				}
 			}
-			if ((j + 1) == 9)
-				_putchar('\n');
 		}
 	}
 }
