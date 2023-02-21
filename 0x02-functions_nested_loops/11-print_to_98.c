@@ -9,22 +9,50 @@ void print_to_98(int n)
 {
 	int i;
 	int k;
+	int f;
+	int l;
 
-	if (n == 98)
+	if (n < 98)
 	{
-		_putchar((char)98);
+		for (i = n; i < 98; i++)
+		{
+			l = i % 10;
+			f = (i - l) / 10;
+			if (f != 0)
+				_putchar('0' + f);
+			_putchar('0' + l);
+			if (i != 98)
+			{
+				_putchar(44);
+				_putchar(32);
+			}
+		}
 	}
 	else if (n > 98)
 	{
-		for (i = n; i >= 98; i--)
+		for (i = n; i > 98; i--)
 		{
-			_putchar((char)i);
+			l = i % 10;
+			f = (i + l) / 10;
+
+			if (f != 0)
+				_putchar('0' + f);
+			_putchar('0' + l);
+			if (i != 98)
+			{
+				_putchar(44);
+				_putchar(32);
+			}
 		}
 	}
 	else
 	{
-		for (i = n; i <= 98; i++)
-		{
-			_putchar((char)i);
-		}
+		l = n % 10;
+		f = (n - l) / 10;
+		_putchar('0' + f);
+		_putchar('0' + l);
 	}
+
+
+
+}	
