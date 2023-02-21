@@ -1,17 +1,17 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * Print the alphabets
+ * print_alphabet -  Print the alphabets
  *
  */
 
 void print_alphabet(void)
 {
-	int small;
-	for (small = 97; small < 123; small++)
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(small);
+		_putchar(c);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
