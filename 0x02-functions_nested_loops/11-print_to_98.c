@@ -13,6 +13,7 @@ void print_to_98(int n)
 			l = i % 10;
 			if (i < 0)
 				f = (i + l) / 10;
+				_putchar(45);
 			else
 				f = (i - l) / 10;
 			if (f != 0)
