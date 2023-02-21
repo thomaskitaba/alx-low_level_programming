@@ -21,10 +21,7 @@ void jack_bauer(void)
 				{
 					_putchar('0' + i);
 					_putchar('0' + j);
-					if (l != 9)
-					{
-						_putchar(':');
-					}
+					_putchar(':');
 					_putchar('0' + k);
 					_putchar('0' + l);
 					_putchar('\n');
