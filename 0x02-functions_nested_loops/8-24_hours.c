@@ -7,6 +7,9 @@
  */
 void print(int i, int j)
 {
+	int k;
+	int l;
+
 	for (k = 0; k < 6; k++)
 	{
 		for (l = 0; l < 10; l++)
@@ -18,7 +21,7 @@ void print(int i, int j)
 		}
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int i, j;
 	
 	for (i = 0; i <= 2; i++)
 	{
