@@ -32,6 +32,7 @@ if (a > b)
 		largest = c;
 	else
 		largest = a;
+}
 else
 {
 	if (c > b)
