@@ -28,6 +28,7 @@ void jack_bauer(void)
 					}
 				}
 			}
+		}
 		if (i == 2)
 		{
 			for (j = 0; j < 4; j++)
