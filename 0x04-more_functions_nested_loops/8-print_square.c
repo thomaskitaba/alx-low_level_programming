@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * more_numbers - print 0 upto 14 x10
+ * print_square - print 0 upto 14 x10
  * @size: size of square
  */
 void print_square(int size);
