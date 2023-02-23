@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - entry for fizz buzz
@@ -40,5 +41,6 @@ int main(void)
 			_putchar('0' + f);
 		_putchar('0' + l), _putchar(32);
 	}
+	_putchar('\n');
 	return (0);
 }
