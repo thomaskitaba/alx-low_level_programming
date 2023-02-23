@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 /**
  * print_number - print up to 4 digit number
  * @n: number to be printed
@@ -7,35 +6,40 @@
  */
 void print_number(int n)
 {
-int count, temp, i, power, num;
-
-if (n < 0)
+int f, t, l, s, temp;
+if (n == 0)
 {
-n *= -1;
-_putchar('-');
+_putchar('0' + n);
 }
-temp = n;
-while (temp != 0)
+if (n > 9 && n < 100)
 {
-temp /= 10;
-count++;
+l = n % 10;
+f = (n - l) / 10;
+_putchar('0' + f), _putchar('0' + l);
 }
-power = (int)pow(10, (count - 1));
-temp = n;
-if (n != 0)
+if (n >= -99 && n < 0)
 {
-for (i = 1; i < count + 1; i++)
+n = -(n);
+l = n % 10;
+f = (n - l) / 10;
+_putchar('-'), _putchar('0' + f), _putchar('0' + l);
+}
+if (n > 99 && n < 1000)
 {
-power = (int)pow(10, (count - i));
-num = temp / power;
-temp =  temp % power;
-_putchar('0' + num);
+l = n % 10;
+temp = (n - l) / 10;
+s = temp % 10;
+f = (temp - s) / 10;
+_putchar('0' + f), _putchar('0' + s), _putchar('0' + l);
 }
-_putchar(temp);
-}
-else
+if (n > 999 && n < 10000)
 {
-_putchar('0');
+l = n % 10;
+temp = (n - l) / 10;
+t = temp % 10;
+temp = (temp - t) / 10;
+s = temp % 10;
+f = (temp - s) / 10;
+_putchar('0' + f), _putchar('0' + s), _putchar('0' + t), _putchar('0' + l);
 }
-_putchar('\n');
 }
