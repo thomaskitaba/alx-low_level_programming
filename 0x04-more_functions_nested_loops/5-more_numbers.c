@@ -9,7 +9,7 @@ void more_numbers(void)
 	int f;
 	int l;
 
-	for (i = 0; i < 14; i++)
+	for (i = 0; i < 15; i++)
 	{
 		l = i % 10;
 		f = (i - l) / 10;
