@@ -2,7 +2,6 @@
 /**
  * print_numbers - checks for upper case
  *
- * Return: product
  */
 void print_numbers(void)
 {
