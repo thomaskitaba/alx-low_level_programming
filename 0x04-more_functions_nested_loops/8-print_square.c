@@ -3,7 +3,7 @@
  * print_square - print 0 upto 14 x10
  * @size: size of square
  */
-void print_square(int size);
+void print_square(int size)
 {
 	int i;
 	int j;
