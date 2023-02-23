@@ -3,12 +3,12 @@
  * mul - checks for upper case
  * @a: number 1 to be added
  * @b: number 2 to be added
- * Return: sum
+ * Return: product
  */
 int mul(int a, int b)
 {
-	int sum;
+	int prod;
 
-	sum = a + b;
-	return (sum);
+	prod = a + b;
+	return (prod);
 }
