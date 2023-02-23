@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - entry for fizz buzz
  *
@@ -7,7 +6,7 @@
  */
 int main(void)
 {
-	int i, f, l;
+	int i;
 
 	for (i = 1; i < 101; i++)
 	{
