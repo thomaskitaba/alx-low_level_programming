@@ -1,24 +1,25 @@
 #include "main.h"
 /**
- * print_square - print 0 upto 14 x10
- * @size: size of square
+ * print_diagonal - print triangle
+ * @n: size of triangle
  *
  */
-void print_square(int size)
+void print_diagonal(int n)
 {
 	int i;
 	int j;
 
-	if (size <= 0)
+	if (n <= 0)
 		_putchar('\n');
 	else
 	{
-		for (j = 0; j < size; j++)
+		for (i = 0; i < n; i++)
 		{
-			for (i = 0; i < size; i++)
+			for (j = 0; j < i; j++)
 			{
-				_putchar('#');
+				_putchar(' ');
 			}
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
