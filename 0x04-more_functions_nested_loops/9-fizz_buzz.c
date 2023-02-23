@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - entry for fizz buzz
@@ -7,33 +6,28 @@
  */
 int main(void)
 {
-int i, f, l;
+	int i;
 
-for (i = 1; i < 101; i++)
-{
-if (i % 3 == 0 && i % 5 == 0)
-{
-_putchar('F'), _putchar('i'), _putchar('z'), _putchar('z');
-_putchar('B'), _putchar('u'), _putchar('z'), _putchar('z'), _putchar(32);
-continue;
-}
-if (i % 3 == 0)
-{
-_putchar('F'), _putchar('i'), _putchar('z'), _putchar('z'), _putchar(32);
-continue;
-}
-if (i % 5 == 0)
-{
-_putchar('B'), _putchar('u'), _putchar('z'), _putchar('z');
-if (i != 100)
-_putchar(32);
-continue;
-}
-l = i % 10;
-f = (i - l) / 10;
-if (i > 9)
-_putchar('0' + f);
-_putchar('0' + l), _putchar(32);
-}
-return (0);
+	for (i = 1; i < 101; i++)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz ");
+			continue;
+		}
+		if (i % 3 == 0)
+		{
+			printf("Fizz ");
+			continue;
+		}
+		if (i % 5 == 0)
+		{
+			printf("Buzz")
+			if (i != 100)
+				printf(" ");
+			continue;
+		}
+		printf("%d ", i);
+	}
+	return (0);
 }
