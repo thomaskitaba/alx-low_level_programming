@@ -6,7 +6,6 @@
  */
 void print_number(int n)
 {
-int n = 422;
 int f, t, l, s, temp;
 if (n == 0)
 {
