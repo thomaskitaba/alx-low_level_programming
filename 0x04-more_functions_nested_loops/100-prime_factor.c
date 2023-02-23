@@ -8,7 +8,7 @@
 int main(void)
 {
 int i, j;
-long long prime_factor = 612852475143;
+long prime_factor = 612852475143;
 int n = sqrt(prime_factor);
 for (i = 2; i < n; i++)
 {
@@ -22,6 +22,6 @@ else
 break;
 }
 }
-printf("%lld\n", prime_factor);
+printf("%ld\n", prime_factor);
 return (0);
 }
