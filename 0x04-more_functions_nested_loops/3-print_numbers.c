@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * print_numbers - print 0 to 9 followed by a new line
+ * print_numbers - print 0 to 9
  *
  */
-void print_numbers(void)
+void printt_numbers(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num < 10; num++)
+	for (i = 0; i < 10; i++)
 	{
 		_putchar('0' + i);
 	}
