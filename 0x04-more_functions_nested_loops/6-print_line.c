@@ -3,7 +3,7 @@
  * print_line - print line on the screen
  * @n: size of line
  */
-void print_line(int n);
+void print_line(int n)
 {
 	int i;
 
