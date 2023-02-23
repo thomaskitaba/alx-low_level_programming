@@ -1,5 +1,5 @@
 #include "main.h"
-#include "math.h"
+#include <math.h>
 /**
  * print_number - print up to 4 digit number
  * @n: number to be printed
