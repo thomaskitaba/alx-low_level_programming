@@ -25,6 +25,8 @@ if (i % 5 == 0)
 _putchar('B'), _putchar('u'), _putchar('z'), _putchar('z');
 if (i != 100)
 _putchar(32);
+else
+_putchar('\n');
 continue;
 }
 l = i % 10;
@@ -33,5 +35,5 @@ if (i > 9)
 _putchar('0' + f);
 _putchar('0' + l), _putchar(32);
 }
-_putchar('\n');
+return (0);
 }
