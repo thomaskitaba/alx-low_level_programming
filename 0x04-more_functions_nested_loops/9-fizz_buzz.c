@@ -25,8 +25,6 @@ if (i % 5 == 0)
 _putchar('B'), _putchar('u'), _putchar('z'), _putchar('z');
 if (i != 100)
 _putchar(32);
-else
-_putchar('\n');
 continue;
 }
 l = i % 10;
