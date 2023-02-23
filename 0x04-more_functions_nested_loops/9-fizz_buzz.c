@@ -34,5 +34,4 @@ _putchar('0' + f);
 _putchar('0' + l), _putchar(32);
 }
 _putchar('\n');
-return (0);
 }
