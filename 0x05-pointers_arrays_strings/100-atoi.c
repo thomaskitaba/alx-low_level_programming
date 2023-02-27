@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int i, j, len, count, number, number_reached;
-	unsigned int num;
+	long int num;
 
 	count = 0;
 	number_reached = 0;
@@ -41,7 +41,7 @@ int _atoi(char *s)
 		{
 			if (s[j] == '-')
 			{
-				num = (unsigned int) number;
+				num = (long int) number;
 				num *= -1;
 			}
 		}
