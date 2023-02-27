@@ -15,9 +15,10 @@ free(password);
 
 char* generate_password() {
     srand(time(NULL));
-    char* password = malloc(10);
-        exit(1);
-    }
+    char *password = malloc(10);
+if (password == NULL)    
+    exit(1);
+    
     const char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}\\|;:'\",./<>?";
     for (int i = 0; i < p; i++) {
         password[i] = valid_chars[rand() % strlen(valid_chars)];
