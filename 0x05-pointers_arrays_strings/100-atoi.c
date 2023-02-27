@@ -9,16 +9,16 @@
 int _atoi(char *s)
 {
 	int i;
+	int j;
 	int len;
 	int count;
 	int number;
-	int check;
+	int number_reached;
 
 	count = 0;
+	number_reached = 0;
 	number = 1;
 	len = (int)strlen(s);
-	check = 0;
-
 	for (i = 0; i < len; i++)
 	{
 		if (s[i] >= 48 && s[i] <= 57)
@@ -26,9 +26,8 @@ int _atoi(char *s)
 			count++;
 			if (count == 1)
 			{
+				number_reached = i;
 				number = s[i] - '0';
-				if (s[i - 1] == '-')
-					check = -1;
 			}
 			else
 			{
@@ -37,10 +36,14 @@ int _atoi(char *s)
 			}
 		}
 	}
-	if (check < 0)
-		number *= -1;
-	if (count == 0)
-		return (0);
-	else
+	if (count > 0)
+	{
+		for (j = 0; j < number_reached; j++)
+		{
+			if (s[j] == '-')
+				number *= -1;
+		}
 		return (number);
+	else
+		return (0);
 }
