@@ -7,16 +7,16 @@
 char* generate_password();
 
 int main() {
-char* password = generate_password();
-printf("Generated password: %s\n", password);
-free(password);
-   return 0;
+char* p = generate_password();
+free(p);
+return 0;
 }
 
 char* generate_password() {
-    srand(time(NULL));
-    int i;
-    char *password = malloc(10);
+srand(time(NULL));
+int i;
+
+char *password = malloc(10);
 if (password == NULL)    
 {
     exit(1);
@@ -24,8 +24,8 @@ if (password == NULL)
     
     const char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}\\|;:'\",./<>?";
     for (i = 0; i < 10; i++) {
-        password[i] = valid_chars[rand() % strlen(valid_chars)];
+        password[i] = valid_chars[rand() % (int)strlen(valid_chars)];
     }
-    password[p] = '\0';
+    password[10] = '\0';
     return password;
 }
