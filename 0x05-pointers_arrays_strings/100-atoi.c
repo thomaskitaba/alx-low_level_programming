@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <limits.h>
 /**
  * _atoi - conver string to number
  * @s: string to be converted
