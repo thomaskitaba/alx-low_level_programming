@@ -13,19 +13,20 @@ return 0;
 }
 
 char* generate_password() {
-srand(time(NULL));
+	
 int i;
+srand(time(NULL));
 
 char *password = malloc(10);
 if (password == NULL)    
 {
-    exit(1);
+exit(1);
 }
     
-    const char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}\\|;:'\",./<>?";
-    for (i = 0; i < 10; i++) {
-        password[i] = valid_chars[rand() % (int)strlen(valid_chars)];
-    }
-    password[10] = '\0';
-    return password;
+const char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+for (i = 0; i < 10; i++) {
+password[i] = valid_chars[rand() % (int)strlen(valid_chars)];
+}
+password[10] = '\0';
+return password;
 }
