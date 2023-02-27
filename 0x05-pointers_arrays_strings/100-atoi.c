@@ -12,10 +12,12 @@ int _atoi(char *s)
 	int len;
 	int count;
 	int number;
+	int check;
 
 	count = 0;
 	number = 1;
 	len = (int)strlen(s);
+	check = 0;
 
 	for (i = 0; i < len; i++)
 	{
@@ -25,6 +27,8 @@ int _atoi(char *s)
 			if (count == 1)
 			{
 				number = s[i] - '0';
+				if (s[i - 1] == '-')
+					check = -1;
 			}
 			else
 			{
@@ -33,13 +37,10 @@ int _atoi(char *s)
 			}
 		}
 	}
+	if (check < 0)
+		number *= -1;
 	if (count == 0)
-	{
 		return (0);
-	}
 	else
-	{
 		return (number);
-	}
 }
-
