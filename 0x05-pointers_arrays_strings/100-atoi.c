@@ -44,6 +44,7 @@ int _atoi(char *s)
 				number *= -1;
 		}
 		return (number);
+	}
 	else
 		return (0);
 }
