@@ -4,17 +4,16 @@
 #include <string.h>
 
 
-char* generate_password(int p);
+char* generate_password();
 
 int main() {
-int password_length = 10;    
-char* password = generate_password(password_length);
+char* password = generate_password();
 printf("Generated password: %s\n", password);
 free(password);
    return 0;
 }
 
-char* generate_password(int p) {
+char* generate_password() {
     srand(time(NULL));
     char* password = malloc(10);
         exit(1);
