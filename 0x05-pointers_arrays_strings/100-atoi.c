@@ -40,6 +40,8 @@ int _atoi(char *s)
 			if (s[j] == '-')
 			{
 				number *= -1;
+				if (number < INT_MIN)
+					number = INT_MIN;
 			}
 		}
 		return (number);
