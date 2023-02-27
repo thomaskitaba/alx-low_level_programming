@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-
 /**
  * _atoi - conver string to number
  * @s: string to be converted
@@ -41,11 +40,10 @@ int _atoi(char *s)
 		{
 			if (s[j] == '-')
 			{
-				num = (unsigned int) number;
-				num *= -1;
+				num = (unsigned int) number, num *= -1;
 			}
 		}
-		return (number);
+		return (num);
 	}
 	else
 		return (0);
