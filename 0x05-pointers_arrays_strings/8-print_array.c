@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * print_array - checks for upper case
  * @a: array in question
@@ -24,3 +25,4 @@ for (i = 0; i < n; i++)
 }
 _putchar('\n');
 }
+
