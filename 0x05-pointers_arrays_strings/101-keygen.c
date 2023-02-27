@@ -17,13 +17,14 @@ char* generate_password() {
 int i;
 srand(time(NULL));
 
-char *password = malloc(10);
+char *password;
+password = malloc(10);
 if (password == NULL)    
 {
 exit(1);
 }
     
-const char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 for (i = 0; i < 10; i++) {
 password[i] = valid_chars[rand() % (int)strlen(valid_chars)];
 }
