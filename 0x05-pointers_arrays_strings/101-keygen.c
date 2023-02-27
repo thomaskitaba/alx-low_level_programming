@@ -16,7 +16,7 @@ free(password);
 
 char* generate_password(int p) {
     srand(time(NULL));
-    char* password = malloc(10101010101010101010101010101010101010101010101010101010101010101010101010101010fprintf(stderr, "Error: memory allocation failed\n");
+    char* password = malloc(10);
         exit(1);
     }
     const char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}\\|;:'\",./<>?";
