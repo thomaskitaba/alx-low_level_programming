@@ -40,8 +40,10 @@ int _atoi(char *s)
 		for (j = 0; j < number_reached; j++)
 		{
 			if (s[j] == '-')
+			{
 				num = (unsigned int) number;
 				num *= -1;
+			}
 		}
 		return (number);
 	}
