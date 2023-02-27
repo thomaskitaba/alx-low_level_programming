@@ -10,10 +10,7 @@ int _atoi(char *s)
 {
 	int i, j, len, count, number, number_reached;
 
-	count = 0;
-	number_reached = 0;
-	number = 1;
-	len = (int)strlen(s);
+	count = 0, number_reached = 0, number = 1, len = (int)strlen(s);
 	for (i = 0; i < len; i++)
 	{
 		if (s[i] >= 48 && s[i] <= 57)
@@ -27,6 +24,8 @@ int _atoi(char *s)
 			{
 				if (s[i - 1] >= 48 && s[i - 1] <= 57)
 				{
+					if (number >= 2147483640)
+						return (INT_MIN);
 					number *= 10, number += s[i] - '0';
 				}
 				else
@@ -39,11 +38,7 @@ int _atoi(char *s)
 		for (j = 0; j < number_reached; j++)
 		{
 			if (s[j] == '-')
-			{
 				number *= -1;
-				if (number < INT_MIN)
-					number = INT_MIN;
-			}
 		}
 		return (number);
 	}
