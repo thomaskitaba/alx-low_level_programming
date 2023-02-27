@@ -8,12 +8,7 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int j;
-	int len;
-	int count;
-	int number;
-	int number_reached;
+	int i, j, len, count, number, number_reached;
 
 	count = 0;
 	number_reached = 0;
@@ -26,13 +21,16 @@ int _atoi(char *s)
 			count++;
 			if (count == 1)
 			{
-				number_reached = i;
-				number = s[i] - '0';
+				number_reached = i, number = s[i] - '0';
 			}
 			else
 			{
-				number *= 10;
-				number += s[i] - '0';
+				if (s[i - 1] >= 48 && s[i - 1] <= 57)
+				{
+					number *= 10, number += s[i] - '0';
+				}
+				else
+					break;
 			}
 		}
 	}
