@@ -23,7 +23,7 @@ for (i = 0; i < 14; i++)
 password[i] = list[rand() % list_len];
 }
 password[15] = '\0';
-printf("Tada! Congrats");
+printf("password: %s\n", password);
 
 return (0);
 }
