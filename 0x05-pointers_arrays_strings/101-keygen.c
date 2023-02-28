@@ -13,16 +13,16 @@ int main(void)
 
 int i, list_len;
 
-char password[11];
+char password[15];
 char list[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?";
 srand(time(NULL));
 
 list_len = (int)strlen(list);
-for (i = 0; i < 10; i++)
+for (i = 0; i < 14; i++)
 {
 password[i] = list[rand() % list_len];
 }
-password[11] = '\0';
+password[15] = '\0';
 printf("Password: %s\n", password);
 return (0);
 }
