@@ -48,6 +48,7 @@ if (i + 1 != n)
 _putchar(','), _putchar(' ');
 }
 }
+_putchar('\n');
 }
 
 
