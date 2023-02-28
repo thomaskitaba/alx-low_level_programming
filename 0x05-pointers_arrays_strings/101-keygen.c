@@ -1,33 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
+#include <stdlib.h>
 #include <string.h>
+/**
+ * main - entry point of the program
+ *
+ * Return: 0 on success, other positive integer on error
+ */
 
+int main(void)
+{
 
-char* generate_password();
+int i, list_len;
 
-int main() {
-char* p = generate_password();
-free(p);
-return 0;
-}
-
-char* generate_password() {
-	
-int i;
+char password[11];
+char list[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?";
 srand(time(NULL));
 
-char *password;
-password = malloc(10);
-if (password == NULL)    
+list_len = (int)strlen(list);
+for (i = 0; i < 10; i++)
 {
-exit(1);
+password[i] = list[rand() % list_len];
 }
-    
-char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-for (i = 0; i < 10; i++) {
-password[i] = valid_chars[rand() % (int)strlen(valid_chars)];
-}
-password[10] = '\0';
-return password;
+password[11] = '\0';
+printf("Password: %s\n", password);
+return (0);
 }
