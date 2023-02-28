@@ -30,7 +30,7 @@ if (num != 0)
 for (j = 0; j < int_len; j++)
 {
 power = 1;
-for (k = j; k < int_len - 1; k++ )
+for (k = j; k < int_len - 1; k++)
 {
 power *= 10;
 (
