@@ -33,18 +33,19 @@ power = 1;
 for (k = j; k < int_len - 1; k++)
 {
 power *= 10;
-(
-f = num / power, num -= f * power;
+}
+f = num / power;
+num -= f * power;
 if (j == 0 && sign < 0)
-putchar('-')
-putchar('0' + f);
+_putchar('-');
+_putchar('0' + f);
 }
 }
 else
-putchar('0');
+_putchar('0');
 if (i + 1 != n)
 {
-putchar(','), putchar(' ');
+_putchar(','), _putchar(' ');
 }
 }
 }
