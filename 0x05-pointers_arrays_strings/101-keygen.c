@@ -14,7 +14,7 @@ int main(void)
 int i, list_len;
 
 char password[15];
-char list[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?";
+char list[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !@#$%^&*()-_=+[{]}\\|;:'\",<.>/?";
 srand(time(NULL));
 
 list_len = (int)strlen(list);
