@@ -1,7 +1,14 @@
 #include "main.h"
+#include <string.h>
+
 /**
- * swap_int - swaps string varibles
- * @a: char to be swaped
- * @b: char to be swaped
- * Return: nothing
+ * _strcmp - swaps string varibles
+ * @s1: char to be copied
+ * @s2: char to be cpied to
+ * Return: 0 if the same, -1 if after, 1 if before
  */
+int _strcmp(char *s1, char *s2)
+{
+	
+	return (0);
+}
