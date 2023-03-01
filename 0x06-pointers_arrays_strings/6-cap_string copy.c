@@ -10,11 +10,11 @@
 char *cap_string(char * str)
 {
 	int i, j, count, str_len;
-	
+	char *temp;
 	
 	str_len = (int)strlen(str);
 	count = 0;
-	
+	temp = malloc(sizeof(str));
 	
 	for(i = 0; i < str_len; i++)
 	{
@@ -33,31 +33,29 @@ char *cap_string(char * str)
 		
 	}
 	
-	
+	temp = str;
 	for (j = 0; j < str_len; j++)
 	{
 		
-		if ((str[j] == ' '))
+		if ((str[j] == ' ') && (str[j - 1] != ' '))
 		{
-			if (j > 0)
-			{
-				if  (str[j - 1] != ' ')
-					str[j - count] = str[j];
-				
-				else 
-					count++;
-			}
+			temp[j - count] = str[j];
+			
+		}
+		if ((str[j] == ' ' ) && (str[j - 1] == ' '))
+		{
+			count++;
 		}
 		if ((str[j] >= 97 && str[j] <= 122) || (str[j] >= 65 && str[j] <= 90))
 		{
-			str[j - count] = str[j];
+			temp[j - count] = str[j];
 			
 		}
 		if (j + 1 == str_len)
 		{
-			str[j - count + 1] = '\0';
+			temp[j - count + 1] = '\0';
 		}
 			
 	}
-	return (str);
+	return (temp);
 }
