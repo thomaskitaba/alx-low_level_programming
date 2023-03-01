@@ -8,15 +8,15 @@
  */
 char *string_toupper(char * str)
 {
-int i, str_len;
+	int i, str_len;
 
-str_len = (int)strlen(str);
-for (i = 0; i < str_len; i++)
-{
-if(str[i] >= 97 && str[i] <= 122)
-{
-str[i] = str[i] - 32;
-}
-}
-return (str);
+	str_len = (int)strlen(str);
+	for (i = 0; i < str_len; i++)
+	{
+		if(str[i] >= 97 && str[i] <= 122)
+		{
+			str[i] = str[i] - 32;
+		}
+	}
+	return (str);
 }
