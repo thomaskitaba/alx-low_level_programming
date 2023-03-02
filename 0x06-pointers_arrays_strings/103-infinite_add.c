@@ -13,51 +13,28 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int i, j, sum;
 int n1_len, n2_len, max_len, min_len, start_point, remainder;
-char *temp_n;
-char *temp_r;
+char *temp_n, *temp_r;
 
-n1_len = (int)strlen(n1);
-n2_len = (int)strlen(n2);
-temp_r = malloc(sizeof(char) * size_r);
-/* check numbers to result*/
-
+n1_len = (int)strlen(n1), n2_len = (int)strlen(n2), temp_r = malloc(sizeof(char) * size_r);
 if ((n1_len > size_r) || (n2_len > size_r))
-{
 	return (0); /* number can not be stored in r*/
-}
-/* create temp_storage for small length number*/
-/* decide from where to start filling temp_n*/
 if(n1_len >= n2_len)
 	max_len = n1_len, min_len = n2_len, start_point = n1_len - n2_len, temp_n = malloc(sizeof(n1));
 else
     max_len = n2_len, min_len = n1_len, start_point = n2_len - n1_len, temp_n = malloc(sizeof(n2));
-
-
-
-/*start filling temp_n with  smaller length number*/
-	
-  
-  temp_n = malloc(sizeof(n1));
-	
-
+temp_n = malloc(sizeof(n1));
 	for(i = 0; i < min_len; i++)
-	{
+	{ 	
 		if (min_len == n1_len)
 			temp_n[i + start_point] = n1[i];
 		if (min_len == n2_len)
-			temp_n[i + start_point] = n2[i];
+			temp_n[i + start_point] = n2[i]; 
 	}
-	/* fill the initial empy places with zero*/
 	for (i = 0; i < start_point; i++)
-	{
 		temp_n[i] = 0;
-	}
-
-/* Start adding the numbers*/
-
 	remainder = 0;
 	for (j = max_len - 1; j > 0; j--)
-	{
+	{	
 		if (min_len == n1_len)  /* temp_n  and n1 */
 		{
 			sum = temp_n[j] + n1[j] + remainder;
@@ -79,12 +56,10 @@ else
 		else
 			temp_r[0] = 0;
 	}
-	/*compare temporary result with result*/
 	if ((int)strlen(temp_r) > size_r)
 		return (0);
 	else
 	{
-		/*transfer temporary result to r*/
 		start_point = 0;
 		for (j = 0; j < (int)strlen(temp_r); j++)
 		{
