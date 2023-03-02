@@ -1,9 +1,5 @@
 #include <stdio.h>
-/**
- * main - entry point of the program
- *
- * Return: 0 on success, 1 on faliure
- */
+
 int main(void)
 {
 int n;
