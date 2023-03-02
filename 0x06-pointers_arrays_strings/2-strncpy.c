@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 		n = src_len;
 	}
 	/* check if n > destination length here*/
-	for (i = 0; i < n + 1; i++)
+	for (i = 0; i < n; i++)
 	{
 		dest[i] = src[i];
 		
