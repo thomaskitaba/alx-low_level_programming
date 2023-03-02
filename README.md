@@ -8,4 +8,5 @@
 7-print_diagonal.c: Write a function that prints half of a string, followed by a new line.
 8-print_square.c: Write a function that prints n elements of an array of integers, followed by a new line.
 9-fizz_buzz: for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz. 
-10-print_triangle.c: Write a function that prints a triangle, followed by a new line.
+10-print_triangle.c: Write a function that prints a triangle, followed by a new line.a
+last line
