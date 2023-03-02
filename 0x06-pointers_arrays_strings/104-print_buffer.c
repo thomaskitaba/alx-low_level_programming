@@ -7,6 +7,5 @@
  * Return: nothing
  */
  void print_buffer(char *b, int size)
-{
-	
+{	
 }
