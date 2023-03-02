@@ -36,5 +36,4 @@ if (num != 0)
 }
 else
 	_putchar('0');
-	_putchar('\');
 }
