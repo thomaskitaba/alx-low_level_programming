@@ -24,5 +24,6 @@ str[i] = rotated[j];
 }
 }
 }
+_putchar('\n');
 return (str);
 }

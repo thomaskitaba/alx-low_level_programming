@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * infinite_add - add larger length of number
+ * @infinite_add - add larger length of number
  * @n1: number 1 to be added
  * @n2: number 2 to be added
  * @r: result buffer
@@ -10,8 +10,8 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int i, j, sum;
-int n1_len, n2_len, max_len, min_len, start_point, remainder;
+int i, j, sum, result;
+int n1_len, n2_len, max_len, min_len = n2_len, start_point, remainder;
 
 n1_len = (int)strlen(n1);
 n2_len = (int)strlen(n2);
@@ -32,8 +32,8 @@ else
 
 
 /*start filling temp_n with  smaller length number*/
-	char temp_n[100];
-	char temp_r[101];
+	char temp_n[max_len];
+	char temp_r[max_len + 1];
 
 	for(i = 0; i < min_len; i++)
 	{
@@ -49,6 +49,7 @@ else
 	}
 
 /* Start adding the numbers*/
+if (min_len == n1_len)  /* temp_n  and n1 */
 
 	remainder = 0;
 	for (j = max_len - 1; j > 0; j--)
