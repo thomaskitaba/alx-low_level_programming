@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
 /**
  * infinite_add - add larger length of number
  * @n1: number 1 to be added
@@ -12,10 +13,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int i, j, sum;
 int n1_len, n2_len, max_len, min_len, start_point, remainder;
+char *temp_n;
+char *temp_r;
 
 n1_len = (int)strlen(n1);
 n2_len = (int)strlen(n2);
-
+temp_r = malloc(sizeof(char) * size_r);
 /* check numbers to result*/
 
 if ((n1_len > size_r) || (n2_len > size_r))
@@ -25,15 +28,17 @@ if ((n1_len > size_r) || (n2_len > size_r))
 /* create temp_storage for small length number*/
 /* decide from where to start filling temp_n*/
 if(n1_len >= n2_len)
-	max_len = n1_len, min_len = n2_len, start_point = n1_len - n2_len;
+	max_len = n1_len, min_len = n2_len, start_point = n1_len - n2_len, temp_n = malloc(sizeof(n1));
 else
-    max_len = n2_len, min_len = n1_len, start_point = n2_len - n1_len;
+    max_len = n2_len, min_len = n1_len, start_point = n2_len - n1_len, temp_n = malloc(sizeof(n2));
 
 
 
 /*start filling temp_n with  smaller length number*/
-	char temp_n[100];
-	char temp_r[101];
+	
+  
+  temp_n = malloc(sizeof(n1));
+	
 
 	for(i = 0; i < min_len; i++)
 	{
