@@ -16,8 +16,7 @@ for (j = 0; j <= n; j++)
 result = i * j;
 if (result > 9 && result <= 99)
 {
-l = result % 10, f = (result - l) / 10;
-_putchar('0' + f), _putchar('0' + l);
+l = result % 10, f = (result - l) / 10, _putchar('0' + f), _putchar('0' + l);
 }
 else if (result > 99)
 {
