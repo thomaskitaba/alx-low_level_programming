@@ -33,9 +33,7 @@ if (result <= 9)
 {
 _putchar(32), _putchar(32), _putchar(32); }
 else if (result > 9 && result <= 99)
-{
 _putchar(32), _putchar(32);
-}
 else
 {
 _putchar(32); } } }
