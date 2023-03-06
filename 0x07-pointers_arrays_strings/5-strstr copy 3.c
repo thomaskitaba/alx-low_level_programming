@@ -16,20 +16,28 @@ for (i = 0; i < hey_len; i++)
 {
 if (haystack[i] == needle[0])
 {
-location = i; /*27*/
-for (j = 0; j < need_len; j++)
-{
-if (haystack[j + i] == needle[j])
-found = 1;
-else
-{
-found = 0;
-break;
-}
-}
+		location = i; /*27*/
+	if (location <= hey_len - need_len)
+	{
+		for (j = 0; j < need_len; j++)
+		{
+		if (need_len <= hey_len - j)
+		break;
+		if (haystack[j + i] == needle[j])
+		found = 1;
+		else
+		{
+		found = 0;
+		break;
+		}
+		}
+	}
+	
 }
 if (found == 1)
 return (haystack + location);
 }
+if (found == 0)
 return (NULL);
+
 }
