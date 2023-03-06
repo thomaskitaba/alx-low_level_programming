@@ -9,7 +9,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-int i, j , position, s_len, c_len;
+int i, j, position, s_len, c_len;
 
 s_len = (int)strlen(s);
 c_len = (int)strlen(accept);
