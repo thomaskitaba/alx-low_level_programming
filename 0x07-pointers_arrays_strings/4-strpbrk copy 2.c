@@ -9,26 +9,19 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-int i, j, s_len, accept_len, first_occurence;
+int i, j, s_len, accept_len;
 
 s_len = (int)strlen(s);
-accept_len = (int)strlen(s);
-first_occurence = -1;
+accept_len = (int)strlen(accept);
 for (i = 0; i < accept_len; i++)
 {
 for (j = 0; j < s_len; j++)
 {
-if (s[j] == accept[i])
+if (*(s + j) == *(accept + i))
 {
-if (first_occurence == -1)
-first_occurence = j;
-if (first_occurence >= j)
-first_occurence = j;
+return (s + j);
 }
 }
 }
-if (first_occurence == -1)
-return NULL;
-else
-return (s + first_occurence);
+return (0);
 }
