@@ -9,24 +9,16 @@
 
 char *_strchr(char *s, char c)
 {
-int  j, s_len, first_occurence;
+int i, s_len;
 
 s_len = (int)strlen(s);
-first_occurence = -1;
 
-for (j = 0; j < s_len; j++)
+for (i = 0; i < s_len; i++)
 {
-if (s[j] == c)
+if (s[i] == c)
 {
-if (first_occurence == -1)
-first_occurence = j;
-if (first_occurence >= j)
-first_occurence = j;
+return (s + i);
 }
 }
-
-if (first_occurence == -1)
 return (NULL);
-else
-return (s + first_occurence);
 }
