@@ -28,7 +28,7 @@ first_occurence = j;
 }
 }
 if (first_occurence == -1)
-return NULL;
+return (NULL);
 else
 return (s + first_occurence);
 }
