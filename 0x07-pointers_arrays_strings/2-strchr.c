@@ -9,10 +9,9 @@
 
 char *_strchr(char *s, char c)
 {
-int i, s_len, found;
+int i, s_len;
 
 s_len = (int)sizeof(s);
-found = 0;
 
 for (i = 0; i < s_len; i++)
 {
