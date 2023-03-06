@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * _strchr - search character in a string
  * @s: string litteral
