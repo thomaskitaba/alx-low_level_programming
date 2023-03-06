@@ -15,10 +15,10 @@ s_len = (int)sizeof(s);
 
 for (i = 0; i < s_len; i++)
 {
-if (*(s + i) == c)
-return (s + i);
-if (i + 1 == s_len)
-return (NULL);
+if (s[i] == c)
+{
+  return (&s[i]);
+}
 }
 return (NULL);
 }
