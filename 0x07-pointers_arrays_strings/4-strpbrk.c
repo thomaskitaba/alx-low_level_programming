@@ -17,7 +17,7 @@ for (i = 0; i < accept_len; i++)
 {
 for (j = 0; j < s_len; j++)
 {
-if (s[j] == accept[i])
+if (*(s + j) == *(accept + i))
 {
 return (s + j);
 }
