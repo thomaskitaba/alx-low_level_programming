@@ -9,16 +9,14 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, k, hey_len, need_len,found, continious, location;
+	int i, j, hey_len, need_len,found, location;
 	
 	found = 0;
 	location = 0;
 
 	hey_len = (int)strlen(haystack);
 	need_len = (int)strlen(needle);
-	continious = 0;
-
-
+	
 	/*find the first occurence of the initial letter*/
 	
 	for (i = 0; i < hey_len; i++)
