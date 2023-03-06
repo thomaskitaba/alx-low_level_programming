@@ -1,0 +1,1 @@
+0-memset: memset equivalent defined in string.h header file
