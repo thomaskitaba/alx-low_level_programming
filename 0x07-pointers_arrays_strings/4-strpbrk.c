@@ -12,7 +12,7 @@ char *_strpbrk(char *s, char *accept)
 int i, j, s_len, accept_len;
 
 s_len = (int)strlen(s);
-accept_len = (int)strlen(s);
+accept_len = (int)strlen(accept);
 for (i = 0; i < accept_len; i++)
 {
 for (j = 0; j < s_len; j++)
