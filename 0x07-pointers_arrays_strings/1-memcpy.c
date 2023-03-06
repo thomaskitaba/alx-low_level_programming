@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 #include <string.h>
 /**
  * _memcpy - Entry point for the program
