@@ -17,5 +17,6 @@ for (i = 0; i < (int)n; i++)
 {
 s[i] = b;
 }
+
 return (s);
 }
