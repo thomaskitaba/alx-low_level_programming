@@ -24,7 +24,6 @@ found = 1;
 else
 {
 found = 0;
-break;
 }
 }
 }
