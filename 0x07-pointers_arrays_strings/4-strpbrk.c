@@ -29,7 +29,7 @@ first_occurence = j;
 }
 }
 if (first_occurence == -1)
-return (0);
+return NULL;
 else
 return (s + first_occurence);
 }
