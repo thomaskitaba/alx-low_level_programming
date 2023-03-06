@@ -7,7 +7,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-int i, j, hey_len, need_len,found, location;
+int i, j, hey_len, need_len, found, location;
 
 found = 0, location = 0;
 hey_len = (int)strlen(haystack), need_len = (int)strlen(needle);
@@ -36,5 +36,5 @@ return (haystack + location);
 if (found == 0)
 return (haystack + location);
 else
-return NULL;
+return (NULL);
 }
