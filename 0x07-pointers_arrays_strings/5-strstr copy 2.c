@@ -12,6 +12,7 @@ int i, j, hey_len, need_len,found, location;
 found = 0, location = 0;
 hey_len = (int)strlen(haystack), need_len = (int)strlen(needle);
 
+/*find the first occurence of the initial letter*/
 for (i = 0; i < hey_len; i++)
 {
 if (haystack[i] == needle[0])
@@ -19,7 +20,9 @@ if (haystack[i] == needle[0])
 location = i; /*27*/
 for (j = 0; j < need_len; j++)
 {
+/* if reached last chars of the end of haystack then */
 if (need_len <= hey_len - j)
+/* means reached end of haystac but didnot find it*/
 break;
 if (haystack[j + i] == needle[j])
 found = 1;
