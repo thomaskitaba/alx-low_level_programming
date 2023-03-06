@@ -3,7 +3,7 @@
 /**
  * _strspn - return initial segment
  * @s: string to be looked
- * @c: set of characters
+ * @accept: set of characters
  * Return: 0 on success, other values on error
  */
 
@@ -25,9 +25,9 @@ break;
 }
 if (j + 1 == c_len)
 {
-return (position);
+return ((unsigned int)position);
 }
 }
 }
-return (position);
+return ((unsigned int)position);
 }
