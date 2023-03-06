@@ -10,22 +10,17 @@
 void print_diagsums(int *a, int size)
 {
 
+int i, sum_1, sum_2;
 
-	
-	int i, sum_1, sum_2;
-	
-	sum_1 = sum_2 = 0;
-
-	for (i = 0; i < size * size ; i = i + size + 1)
-	{
-		sum_1 += *(a + i);  /* condition */
-	}
-		
-	
-	for (i = size - 1; i <= ((size * size) - size); i = i + size - 1)
-	{
-		sum_2 += *(a + i); /*TODO: */
-	}
-	printf("%d, %d", sum_1, sum_2);
-	printf("\n");
+sum_1 = sum_2 = 0;
+for (i = 0; i < size * size ; i = i + size + 1)
+{
+sum_1 += *(a + i);  /* condition */
+}
+for (i = size - 1; i <= ((size * size) - size); i = i + size - 1)
+{
+sum_2 += *(a + i); /*TODO: */
+}
+printf("%d, %d", sum_1, sum_2);
+printf("\n");
 }
