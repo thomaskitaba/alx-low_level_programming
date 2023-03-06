@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * print_chessboard - Entry point for the program
  * @a: two dimensional array
