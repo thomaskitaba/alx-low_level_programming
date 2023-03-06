@@ -17,7 +17,7 @@ for (i = 0; i < s_len; i++)
 {
 if (s[i] == c)
 {
-  return (s + i);
+return (s + i);
 }
 }
 return NULL;
