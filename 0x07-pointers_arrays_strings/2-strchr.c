@@ -9,14 +9,17 @@
 
 char *_strchr(char *s, char c)
 {
-int i, s_len;
+int i, s_len, found;
 
 s_len = (int)sizeof(s);
+found = 0;
 
 for (i = 0; i < s_len; i++)
 {
 if (*(s + i) == c)
 return (s + i);
+if (i + 1 == s_len)
+return (NULL);
 }
-return (0);
+return (NULL);
 }
