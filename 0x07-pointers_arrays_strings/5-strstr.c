@@ -21,7 +21,7 @@ location = i; /*27*/
 for (j = 0; j < need_len; j++)
 {
 if (haystack[j + i] == needle[j])
-found ++;
+found++;
 if (j + i + 1 >= hey_len)
 	break;
 }
