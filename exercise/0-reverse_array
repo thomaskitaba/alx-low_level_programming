@@ -7,7 +7,7 @@ int main (void)
   char str[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
   char *s;
 
-  s = reverse_array(char *str);
+  s = reverse_array(str);
   printf("reversed: %s", s);
 
   return (0);
