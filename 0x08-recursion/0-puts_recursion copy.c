@@ -14,8 +14,8 @@ int i, s_len;
 s_len = (int)strlen(s);
 for (i = 0; i < s_len; i++)
 {
-_putchar(s[i]);
-
+  _putchar(s[i]);
+  
 }
 _putchar('\n');
 }
