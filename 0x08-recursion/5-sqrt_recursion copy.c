@@ -8,15 +8,15 @@
  */
 int _square(int n, int i)
 {
-if (i <= n / 2)
-{
-if ( n == i * i)
-{
-return (i);
-}
-return (_square(n, i + 1));
-}
-return (-1);
+  if (i <= n / 2)
+  {
+    if ( n == i * i)
+    {
+      return (i);
+    }
+    return (_square(n, i + 1));
+  }
+  return (-1);
 }
 /**
  * _sqrt_recursion - _sqrt_recursion
@@ -27,9 +27,10 @@ return (-1);
 int _sqrt_recursion(int n)
 {
 if (n < 0)
-return (-1);
+  return (-1);
 else
 {
-return (_square(n, 1));
+  return (_square(n, 1));
 }
+
 }
