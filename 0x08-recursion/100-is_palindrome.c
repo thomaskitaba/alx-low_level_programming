@@ -25,7 +25,7 @@ int compare(char *s, int left, int right)
 int mid;
 
 mid = _strlen_recursion(s) / 2;
-if ( left <= mid && right >= mid)
+if (left <= mid && right >= mid)
 {
 if (s[left] != s[right])
 return (0);
