@@ -11,9 +11,9 @@ int _square(int n, int i)
 if (i <= n / 2)
 {
 if ( n == i * i)
-{
 return (i);
-}
+if (n == 1)
+return (1);
 return (_square(n, i + 1));
 }
 return (-1);
