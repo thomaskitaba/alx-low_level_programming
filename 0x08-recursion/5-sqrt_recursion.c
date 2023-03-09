@@ -10,7 +10,7 @@ int _square(int n, int i)
 {
 if (i <= n / 2)
 {
-if ( n == i * i)
+if (n == i * i)
 return (i);
 return (_square(n, i + 1));
 }
