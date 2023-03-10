@@ -46,6 +46,18 @@ return ((floor(cents / 2)));
 return (0);
 }
 /**
+ * calculate_pennies - calculate
+ * @cents: argc
+ * Return: cents on success, 0 on error
+ */
+int calculate_pennies(int cents)
+{
+if (cents == 1)
+return ((floor(cents / 1)));
+return (0);
+}
+
+/**
  * main - entry point for the program
  * @argc: argc
  * @argv: argument vector
@@ -71,7 +83,7 @@ quarters = calculate_quarters(cents), cents = cents - quarters * 25;
 dimes = calculate_dimes(cents), cents = cents - dimes * 10;
 nickels = calculate_nickels(cents), cents = cents - nickels * 5;
 twos = calculate_twos(cents), cents = cents - twos * 2;
-pennies = cents;
+pennies = calculate_pennies(cents), cents = cents - pennies * 1;
 coins = quarters + dimes + nickels + twos + pennies;
 printf("%i\n", coins);
 return (0);
