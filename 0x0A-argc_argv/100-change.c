@@ -38,19 +38,19 @@ int calculate_quarters(int cents)
 {
 if (cents >= 25)
 return ((floor(cents / 25)));
-return 0; 
+return (0); 
 }
 int calculate_dimes(int cents)
 {
 if (cents >= 10 && cents < 25)
 return ((floor(cents / 10)));
-return 0; 
+return (0); 
 }
 int calculate_nickels(int cents)
 {
 if (cents >= 5 && cents < 10)
 return ((floor(cents / 5)));
-return 0;
+return (0);
 }
 int calculate_twos(int cents)
 {
@@ -61,5 +61,5 @@ int calculate_pennies(int cents)
 {
 if (cents == 1)
 return ((floor(cents / 1)));
-return 0;
+return (0);
 }
