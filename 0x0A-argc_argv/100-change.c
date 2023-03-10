@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * @
- *
- * @param cents
- * @return int
+ * main - entry point for the program
+ * @argc: argc
+ * @argv: argument vector
+ * Return: 0 on success, other 1 on error
  */
 int calculate_quarters(int cents), calculate_dimes(int cents), calculate_nickels(int cents);
 int calculate_twos(int cents), calculate_pennies(int cents);
