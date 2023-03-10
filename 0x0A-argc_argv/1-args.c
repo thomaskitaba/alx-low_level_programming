@@ -11,6 +11,13 @@
 
 int main(int argc, char *argv[])
 {
-printf("%d\n", argc);
+
+if((int)strlen(argv[0]) == 0)
+{
+  printf("%d\n", 0);
+  return (0);
+}
+printf("%d\n", argc - 1);
+
 return (0);
 }
