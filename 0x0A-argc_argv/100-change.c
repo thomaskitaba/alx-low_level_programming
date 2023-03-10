@@ -18,9 +18,10 @@ int main(int argc, char *argv[])
 		else
 			cents = atoi(argv[1]);
 		if (cents < 0)
+		{
 			printf("%d\n", 0);
 			return (0);
-		
+		}
 		quarters = calculate_quarters(cents), cents = cents - quarters * 25;
 		dimes = calculate_dimes(cents), cents = cents - dimes * 10;
 		nickels = calculate_nickels(cents), cents = cents - nickels * 5;
@@ -28,6 +29,7 @@ int main(int argc, char *argv[])
 		pennies = calculate_pennies(cents), cents = cents - pennies * 1;
 		coins = quarters + dimes + nickels + twos + pennies;
 		printf("%i\n", coins);
+		return (0);
 }
 int calculate_quarters(int cents)
 {
