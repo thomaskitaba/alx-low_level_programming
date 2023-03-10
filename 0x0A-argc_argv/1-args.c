@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 
-if((int)strlen(argv[0]) == 0)
+if ((int)strlen(argv[0]) == 0)
 {
 printf("%d\n", 0);
 return (0);
