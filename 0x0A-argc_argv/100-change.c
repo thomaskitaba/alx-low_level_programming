@@ -38,13 +38,13 @@ int calculate_quarters(int cents)
 {
 if (cents >= 25)
 return ((floor(cents / 25)));
-return (0); 
+return (0);
 }
 int calculate_dimes(int cents)
 {
 if (cents >= 10 && cents < 25)
 return ((floor(cents / 10)));
-return (0); 
+return (0);
 }
 int calculate_nickels(int cents)
 {
