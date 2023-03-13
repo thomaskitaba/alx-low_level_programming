@@ -33,7 +33,7 @@ char *argstostr(int ac, char **av)
 
 	
 	av_len = 0;
-	if (ac == 0 || av == NULL)
+	if (ac <= 1 || av == NULL)
 		return NULL;
 
 	for (k = 0; k < ac; k++)
@@ -57,6 +57,7 @@ char *argstostr(int ac, char **av)
 		_memcpy(temp, av[i], (unsigned int)strlen(av[i]));
 		
 	}
+	temp[av_len] = '\0';
 	
 	return (temp);
 }
