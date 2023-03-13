@@ -19,7 +19,6 @@ temp = (int **)malloc(height * sizeof(int *));
 
 if (temp == NULL)
 {
-  free(temp);
   return (NULL);
 }
 for (i = 0; i < height; i++)
