@@ -18,7 +18,10 @@ if (width <=0 || height <= 0)
 temp = (int **)malloc(height * sizeof(int *));
 
 if (temp == NULL)
-	return (NULL);
+{
+  free(temp);
+  return (NULL);
+}
 for (i = 0; i < height; i ++)
 {
 	temp[i] = (int *)malloc(width * sizeof(int));
