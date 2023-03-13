@@ -16,13 +16,13 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	str_len = (int)strlen(str);
-	duplicate = (char *)malloc(sizeof(str) + sizeof(char) + 4);
+	duplicate = (char *)malloc((int)sizeof(str) + str_len + 1);
 
 	if (duplicate == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < str_len + 1; i++)
+	for (i = 0; i < str_len; i++)
 	{
 		duplicate[i] = str[i];
     
