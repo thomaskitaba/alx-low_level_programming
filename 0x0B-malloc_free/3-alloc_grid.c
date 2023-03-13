@@ -14,7 +14,6 @@ int **temp;
 
 if (width <=0 || height <= 0)
 {
-  free(temp);
 	return (NULL);
 }
 
@@ -33,5 +32,6 @@ for (i = 0; i < height; i ++)
 		temp[i][j]= 0;
 	}
 }
+free(temp);
 return (temp);
 }
