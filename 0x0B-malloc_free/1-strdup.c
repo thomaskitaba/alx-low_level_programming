@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	}
 	for (i = 0; i < str_len + 1; i++)
 	{
-		*(duplicate + i) = *(str + i);
+		duplicate[i] = str[i];
     
 	}
 
