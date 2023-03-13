@@ -28,7 +28,7 @@ if (temp[i] == NULL)
 {
   for(k = 0; k <= i; k++)
   {
-    free(temp[i]);
+    free(temp[k]);
   }
   free(temp);
   return (NULL);
