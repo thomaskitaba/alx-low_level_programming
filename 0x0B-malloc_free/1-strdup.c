@@ -6,7 +6,7 @@
  * @str: The character to print
  * Return: return 0 on success
  */
-char *_strdup1(char *str)
+char *_strdup(char *str)
 { 
 	char *duplicate;
 	int i, str_len;
