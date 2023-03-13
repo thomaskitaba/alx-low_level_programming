@@ -8,24 +8,23 @@
  */
 char *_strdup(char *str)
 { 
-	char *duplicate;
-	int i, str_len;
+char *duplicate;
+int i, str_len;
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-	str_len = (int)strlen(str);
-	duplicate = (char *)malloc(str_len + 1);
-
-	if (duplicate == NULL)
-	{
-		return (NULL);
-	}
-	for (i = 0; i < str_len; i++)
-	{
-		duplicate[i] = str[i];
-    
-	}
-	return (duplicate);
+if (str == NULL)
+{
+return (NULL);
 }
+str_len = (int)strlen(str);
+duplicate = (char *)malloc(str_len + 1);
+
+if (duplicate == NULL)
+{
+return (NULL);
+}
+for (i = 0; i < str_len; i++)
+{
+duplicate[i] = str[i];
+
+}
+return (duplicate);
