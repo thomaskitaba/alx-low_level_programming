@@ -57,7 +57,7 @@ char *argstostr(int ac, char **av)
 		_memcpy(temp, av[i], (unsigned int)strlen(av[i]));
 		
 	}
-	temp[av_len] = '\0';
+	
 	
 	return (temp);
 }
