@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 		for (j = 0; j <= (int)strlen(av[i]) ; j++)
 		{
 			temp[i + j] = av[i][j];
-			if (j + 1 = (int)strlen(av[i]))
+			if (j + 1 == (int)strlen(av[i]))
 				temp[i][j] = '\n';
 
 		}
