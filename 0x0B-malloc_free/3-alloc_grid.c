@@ -16,8 +16,8 @@ if (width <=0 || height <= 0)
 	return (NULL);
 
 temp = (int **)malloc(height * sizeof(int *));
-h_size = (int)sizeof(int) * height;
-w_size = (int)sizeof(int) * width;
+h_size = (int *)sizeof(int) * height;
+w_size = (int *)sizeof(int) * width;
 if (temp == NULL)
 	return (NULL);
 for (i = 0; i < height; i ++)
