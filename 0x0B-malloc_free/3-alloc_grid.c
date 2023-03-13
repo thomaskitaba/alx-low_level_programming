@@ -13,7 +13,10 @@ int i, j;
 int **temp;
 
 if (width <=0 || height <= 0)
+{
+  free(temp);
 	return (NULL);
+}
 
 temp = (int **)malloc(height * sizeof(int *));
 
