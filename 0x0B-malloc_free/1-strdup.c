@@ -7,7 +7,7 @@
  * Return: return 0 on success
  */
 char *_strdup(char *str)
-{ 
+{
 char *duplicate;
 int i, str_len;
 
@@ -25,6 +25,6 @@ return (NULL);
 for (i = 0; i < str_len; i++)
 {
 duplicate[i] = str[i];
-
 }
 return (duplicate);
+}
