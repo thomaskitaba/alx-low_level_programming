@@ -13,20 +13,19 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	str_len = (int)strlen(str);
 	duplicate = (char *)malloc(sizeof(str) + 1);
 
 	if (duplicate == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
-	for (i = 0; i < str_len; i++)
+	for (i = 0; i < str_len + 1; i++)
 	{
 		*(duplicate + i) = *(str + i);
-    if (i + 1 == str_len)
-      *(duplicate + i + 1) = '\0';
+    
 	}
 
 	
