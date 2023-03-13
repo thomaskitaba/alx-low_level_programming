@@ -18,9 +18,9 @@ char *str_concat(char *s1, char *s2)
   concatenated = malloc(sizeof(s1) + sizeof(s2));
 
 if (s1 == NULL)
-  s1 = '\0';
+  s1 = "";
 if (s2 == NULL)
-  s2 = '\0';
+  s2 = "";
 if (concatenated == NULL)
 {
   return (NULL);
@@ -32,12 +32,12 @@ for (i = 0; i < s1_len; i++)
 for (j = 0; j < s2_len; j++)
 {
   concatenated[s1_len + j] = s2[j];
- /* if (j + 1 == s2_len)
+  if (j + 1 == s2_len)
   {
     concatenated[s1_len + j + 1] = '\0';
   }
-  */
 }
+
 
 return (concatenated);
 
