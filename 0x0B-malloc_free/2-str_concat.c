@@ -1,5 +1,6 @@
 #include "main.h"
-#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * str_concat -  writes the character c to stdout
@@ -9,5 +10,35 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+  int i, j, s1_len, s2_len;
+  char *concatenated;
+
+  s1_len = (int)strlen(s1);
+  s2_len = (int)strlen(s2);
+  concatenated = malloc(sizeof(s1) + sizeof(s2) + 1);
+
+if (s1 == NULL)
+  s1 = '\0';
+if (s2 == NULL)
+  s2 = '\0';
+if (concatenated == NULL)
+{
+  return (NULL);
+}
+for (i = 0; i < s1_len; i++)
+{
+  concatenated[i] = s1[i];
+}
+for (j = 0; j < s2_len; j++)
+{
+  concatenated[s1_len + j] = s2[j];
+  if (j + 1 == s2_len)
+  {
+    concatenated[s1_len + j + 1] = '\0';
+  }
+}
+
+return (concatenated);
+
 
 }
