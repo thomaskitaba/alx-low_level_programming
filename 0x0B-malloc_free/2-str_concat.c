@@ -37,8 +37,6 @@ for (j = 0; j < s2_len; j++)
     concatenated[s1_len + j + 1] = '\0';
   }
 }
-
-
 return (concatenated);
 
 
