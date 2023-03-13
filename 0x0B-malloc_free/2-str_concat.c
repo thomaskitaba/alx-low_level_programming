@@ -14,12 +14,18 @@ char *str_concat(char *s1, char *s2)
   char *concatenated;
 
   if (s1 == NULL)
+  { 
     s1 = '\0';
+    s1_len = 0;
+  }
+  else
+    s1_len = (int)strlen(s1);
   
   if (s2 == NULL)
+  {
     s2 = '\0';
-  
-  s1_len = (int)strlen(s1);
+    s2_len = 0;
+  }
   s2_len = (int)strlen(s2);
   concatenated = malloc((s1_len *sizeof(char)) + (s2_len *sizeof(char)) + 1);
 
