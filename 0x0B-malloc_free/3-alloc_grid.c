@@ -26,7 +26,7 @@ for (i = 0; i < height; i++)
 temp[i] = (int *)malloc(width * sizeof(int));
 if (temp[i] == NULL)
 {
-for(k = 0; k <= i; k++)
+for (k = 0; k <= i; k++)
 {
 free(temp[k]);
 }
